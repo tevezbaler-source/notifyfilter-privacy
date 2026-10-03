@@ -1,114 +1,145 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>NotifyFilter – Privacy Policy</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: #0a1628;
-      color: #cbd5e1;
-      line-height: 1.8;
-      padding: 40px 20px;
-    }
-    .container { max-width: 760px; margin: 0 auto; }
-    h1 {
-      font-size: 2rem;
-      color: #00b4ff;
-      margin-bottom: 6px;
-    }
-    .subtitle { color: #4a6080; font-size: 0.9rem; margin-bottom: 40px; }
-    h2 {
-      font-size: 1.1rem;
-      color: #fff;
-      margin: 32px 0 10px;
-      padding-left: 12px;
-      border-left: 3px solid #00b4ff;
-    }
-    p { margin-bottom: 12px; color: #8aa0c0; }
-    ul { margin: 8px 0 12px 20px; color: #8aa0c0; }
-    ul li { margin-bottom: 6px; }
-    .highlight {
-      background: rgba(0,180,255,0.08);
-      border: 1px solid rgba(0,180,255,0.2);
-      border-radius: 10px;
-      padding: 16px 20px;
-      margin: 20px 0;
-      color: #00b4ff;
-      font-weight: 500;
-    }
-    .footer {
-      margin-top: 60px;
-      padding-top: 20px;
-      border-top: 1px solid rgba(0,180,255,0.15);
-      color: #4a6080;
-      font-size: 0.85rem;
-      text-align: center;
-    }
-    a { color: #00b4ff; text-decoration: none; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NotifyFilter Gizlilik Politikası</title>
+<style>
+  :root { --bg:#ffffff; --fg:#1b1b1f; --muted:#5b5b66; --line:#e3e3ea; --accent:#5b3df5; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0f0f14; --fg:#ececf1; --muted:#a0a0ad; --line:#2a2a35; --accent:#9d8cff; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:40px 16px 64px; }
+  h1 { font-size:1.9rem; margin:0 0 4px; }
+  h2 { font-size:1.2rem; margin:32px 0 8px; }
+  p, li { color:var(--fg); }
+  .meta { color:var(--muted); margin:0 0 24px; }
+  .lang { display:flex; gap:12px; margin:0 0 28px; }
+  .lang a { color:var(--accent); text-decoration:none; font-weight:600; }
+  hr { border:0; border-top:1px solid var(--line); margin:56px 0; }
+  a { color:var(--accent); }
+</style>
 </head>
 <body>
-  <div class="container">
+<main>
 
-    <h1>🔔 NotifyFilter</h1>
-    <p class="subtitle">Privacy Policy &nbsp;·&nbsp; Last updated: January 2025</p>
+<section id="tr">
+  <h1>NotifyFilter Gizlilik Politikası</h1>
+  <p class="meta">Yürürlük tarihi: 3 Ekim 2026</p>
+  <div class="lang"><a href="#tr">Türkçe</a><a href="#en">English</a></div>
 
-    <div class="highlight">
-      NotifyFilter does not collect, store, or share any personal data on external servers.
-      All data remains exclusively on your device.
-    </div>
+  <p>Bu politika, NotifyFilter Android uygulamasının ("Uygulama") hangi verilere eriştiğini, bunları nasıl kullandığını ve nasıl koruduğunu açıklar. Uygulama Ogün Yardım tarafından geliştirilmektedir.</p>
 
-    <h2>1. Information We Collect</h2>
-    <p>NotifyFilter operates entirely on your device. The app processes the following data <strong>locally only</strong>:</p>
-    <ul>
-      <li><strong>Notification content</strong> — titles and text of notifications from other apps, used solely to match your keywords.</li>
-      <li><strong>Keywords</strong> — words you enter to filter notifications, stored locally via AsyncStorage.</li>
-      <li><strong>App settings</strong> — preferences such as language, speech rate, and car mode, stored locally on your device.</li>
-    </ul>
+  <h2>Kısaca</h2>
+  <ul>
+    <li>Bildirimlerin <strong>yalnızca telefonunda</strong> işlenir.</li>
+    <li>Bildirim içerikleri hiçbir sunucuya <strong>gönderilmez</strong>, satılmaz ve paylaşılmaz.</li>
+    <li>Hesap oluşturman gerekmez. Adın, e-postan ya da telefon numaran istenmez.</li>
+  </ul>
 
-    <h2>2. How We Use Your Data</h2>
-    <p>All processing happens on-device:</p>
-    <ul>
-      <li>Notification text is scanned in real time against your keywords.</li>
-      <li>Matched notifications are saved to a local SQLite database on your device.</li>
-      <li>Text-to-speech (TTS) reads matched notifications aloud using your device's built-in engine.</li>
-      <li>No data is transmitted to any server or third party.</li>
-    </ul>
+  <h2>Eriştiğimiz veriler</h2>
+  <p><strong>Bildirim içerikleri:</strong> Android'in "Bildirim erişimi" izni verildiğinde Uygulama, telefonuna gelen bildirimlerin başlığını, metnini ve hangi uygulamadan geldiğini okur. Bu, anahtar kelimelerinle eşleşip eşleşmediklerini anlamak için yapılır. <strong>Yalnızca eşleşen bildirimler kaydedilir.</strong> Eşleşmeyenler saklanmaz.</p>
+  <p><strong>Ayarların:</strong> Belirlediğin anahtar kelimeler, dil, okuma hızı ve araç modu gibi tercihler.</p>
+  <p><strong>Yüklü uygulamalar:</strong> Yalnızca bildirimlerin yanında ilgili uygulamanın simgesini gösterebilmek için kullanılır.</p>
+  <p><strong>Bluetooth bağlantı durumu:</strong> Araç modu açıksa, telefonunun araç kitine bağlanıp bağlanmadığını algılamak için kullanılır.</p>
 
-    <h2>3. Data Sharing</h2>
-    <p>We do <strong>not</strong> share, sell, rent, or disclose your data to any third party. NotifyFilter has no backend server and makes no network requests related to your personal data.</p>
+  <h2>Verileri nasıl kullanıyoruz?</h2>
+  <ul>
+    <li>Gelen bildirimleri anahtar kelimelerinle karşılaştırıp eşleşenleri Uyarılar ekranında göstermek.</li>
+    <li>Geçmiş ekranında önceki eşleşmeleri saklamak.</li>
+    <li>"Dinle" özelliğinde mesajı telefonunun kendi metin okuma (TTS) motoruyla, internet gerektirmeyen seslerle okumak.</li>
+    <li>Hızlı yanıt özelliğinde yazdığın cevabı, bildirimin geldiği uygulamanın kendi yanıt alanına iletmek. Bu yalnızca sen gönderdiğinde ve telefonun içinde olur.</li>
+  </ul>
+  <p>Tüm bu işlemler cihazında gerçekleşir. Eşleşen bildirimler ve ayarlar yalnızca Uygulamanın telefondaki yerel depolama alanında tutulur. Uygulama, Google yedeklemesine de veri göndermez.</p>
 
-    <h2>4. Permissions Used</h2>
-    <ul>
-      <li><strong>Notification Listener</strong> — to read incoming notifications and filter them by your keywords.</li>
-      <li><strong>Bluetooth</strong> — to detect car kit connection for automatic Car Mode activation.</li>
-      <li><strong>Foreground Service</strong> — to keep the notification listener running reliably in the background.</li>
-      <li><strong>Internet</strong> — standard React Native requirement; not used to transmit personal data.</li>
-    </ul>
+  <h2>Satın almalar</h2>
+  <p>Premium abonelik Google Play Faturalandırma üzerinden yapılır. Ödeme bilgilerin Google tarafından işlenir. Biz kart bilgilerini görmeyiz ve saklamayız. Google'ın veri uygulamaları için <a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a>'na bakabilirsin.</p>
 
-    <h2>5. Data Retention</h2>
-    <p>Notification history is stored locally on your device in a SQLite database. You can clear this data at any time from the History tab within the app. Uninstalling the app permanently removes all stored data.</p>
+  <h2>Paylaşım</h2>
+  <p>Kişisel verilerini ya da bildirim içeriklerini üçüncü taraflarla paylaşmıyor, satmıyor ve reklam amacıyla kullanmıyoruz.</p>
 
-    <h2>6. Children's Privacy</h2>
-    <p>NotifyFilter is not directed at children under the age of 13. We do not knowingly collect any information from children.</p>
+  <h2>Saklama ve silme</h2>
+  <ul>
+    <li>Uyarılar ve Geçmiş kayıtlarını Uygulama içinden istediğin zaman silebilirsin.</li>
+    <li>Uygulamayı kaldırdığında telefondaki tüm Uygulama verileri silinir.</li>
+    <li>Bildirim erişimini istediğin zaman Ayarlar → Bildirimler → Bildirim erişimi bölümünden kapatabilirsin.</li>
+  </ul>
 
-    <h2>7. Security</h2>
-    <p>Since all data is stored locally on your device and never transmitted externally, your information is protected by your device's own security mechanisms (screen lock, encryption, etc.).</p>
+  <h2>Güvenlik</h2>
+  <p>Veriler cihazından çıkmadığı için en önemli koruma telefonunun kendi güvenliğidir. Ekran kilidi kullanmanı öneririz.</p>
 
-    <h2>8. Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated date. Continued use of the app after changes constitutes acceptance of the new policy.</p>
+  <h2>Çocuklar</h2>
+  <p>Uygulama 18 yaşından küçükler için tasarlanmamıştır ve bilerek çocuklardan veri toplamaz.</p>
 
-    <h2>9. Contact</h2>
-    <p>If you have any questions about this Privacy Policy, please contact us:</p>
-    <p>📧 <a href="mailto:notifyfilterapp@gmail.com">notifyfilterapp@gmail.com</a></p>
+  <h2>Haklarınız (KVKK)</h2>
+  <p>6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamındaki haklarını kullanmak veya soru sormak için bize aşağıdaki adresten ulaşabilirsin. Verilerin sunucularımızda tutulmadığı için kayıtlarının tamamı senin cihazındadır ve onları doğrudan silebilirsin.</p>
 
-    <div class="footer">
-      © 2025 NotifyFilter. All rights reserved.
-    </div>
+  <h2>Değişiklikler</h2>
+  <p>Bu politikayı güncellersek yeni tarihi bu sayfada yayınlarız.</p>
 
-  </div>
+  <h2>İletişim</h2>
+  <p>E-posta: <a href="mailto:notifyfilterapp@gmail.com">notifyfilterapp@gmail.com</a></p>
+</section>
+
+<hr>
+
+<section id="en" lang="en">
+  <h1>NotifyFilter Privacy Policy</h1>
+  <p class="meta">Effective date: October 3, 2026</p>
+  <div class="lang"><a href="#tr">Türkçe</a><a href="#en">English</a></div>
+
+  <p>This policy explains what data the NotifyFilter Android app ("the App") accesses, how it is used and how it is protected. The App is developed by Ogün Yardım.</p>
+
+  <h2>Summary</h2>
+  <ul>
+    <li>Your notifications are processed <strong>only on your phone</strong>.</li>
+    <li>Notification content is <strong>never sent</strong> to any server, sold or shared.</li>
+    <li>No account is required. We do not ask for your name, email or phone number.</li>
+  </ul>
+
+  <h2>Data we access</h2>
+  <p><strong>Notification content:</strong> When you grant Android's "Notification access" permission, the App reads the title, text and source app of notifications arriving on your phone, in order to check them against your keywords. <strong>Only matching notifications are saved.</strong> Non-matching ones are not stored.</p>
+  <p><strong>Your settings:</strong> Keywords, language, speech rate, car mode and similar preferences.</p>
+  <p><strong>Installed apps:</strong> Used only to show the source app's icon next to a notification.</p>
+  <p><strong>Bluetooth connection state:</strong> When car mode is on, used to detect whether your phone is connected to a car kit.</p>
+
+  <h2>How we use it</h2>
+  <ul>
+    <li>To compare incoming notifications with your keywords and show matches in Alerts.</li>
+    <li>To keep previous matches in History.</li>
+    <li>To read a message aloud with your phone's built-in text-to-speech engine, using offline voices, when you tap "Listen".</li>
+    <li>For quick reply, to pass the reply you type to the originating app's own reply action. This happens only when you send it, and only on your phone.</li>
+  </ul>
+  <p>All processing happens on your device. Matched notifications and settings are stored only in the App's local storage on your phone. The App does not send data to Google backup either.</p>
+
+  <h2>Purchases</h2>
+  <p>The Premium subscription is handled by Google Play Billing. Payment details are processed by Google; we never see or store your card information. See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+  <h2>Sharing</h2>
+  <p>We do not share, sell or use your personal data or notification content for advertising.</p>
+
+  <h2>Retention and deletion</h2>
+  <ul>
+    <li>You can delete Alerts and History inside the App at any time.</li>
+    <li>Uninstalling the App deletes all of its data from your phone.</li>
+    <li>You can revoke notification access at any time in Settings → Notifications → Notification access.</li>
+  </ul>
+
+  <h2>Security</h2>
+  <p>Because data never leaves your device, your phone's own security is the main protection. We recommend using a screen lock.</p>
+
+  <h2>Children</h2>
+  <p>The App is not intended for anyone under 18 and does not knowingly collect data from children.</p>
+
+  <h2>Changes</h2>
+  <p>If we update this policy, we will post the new date on this page.</p>
+
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:notifyfilterapp@gmail.com">notifyfilterapp@gmail.com</a></p>
+</section>
+
+</main>
 </body>
 </html>
